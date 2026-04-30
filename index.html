@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="个人网站三屏展示。">
+  <title>我的个人网站</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="snap-wrap">
+    <section id="cover" class="panel cover-panel">
+      <video class="bg-video" autoplay muted loop playsinline>
+        <source src="./1.mp4" type="video/mp4">
+      </video>
+      <div class="video-mask"></div>
+      <div class="panel-content">
+        <p class="panel-label">WELCOME</p>
+        <h1>先成为自己的山，再去找心里的海</h1>
+        <p class="subtitle">Be your own mountain first, then seek the sea within your heart.</p>
+      </div>
+      <button class="mouse-hint" data-target="profile" aria-label="进入第二页">
+        <span></span>
+      </button>
+    </section>
+
+    <section id="profile" class="panel profile-panel">
+      <video class="bg-video" autoplay muted loop playsinline>
+        <source src="./2.mp4" type="video/mp4">
+      </video>
+      <div class="video-mask dark-mask"></div>
+      <div class="panel-content">
+        <p class="panel-label">PROFILE</p>
+        <h2>个人信息及履历</h2>
+        <div class="glass-card">
+          <p><strong>姓名：</strong>你的名字</p>
+          <p><strong>定位：</strong>前端开发 / UI 设计 / 产品实现</p>
+          <p><strong>教育背景：</strong>计算机相关专业，持续学习设计与技术融合</p>
+          <p><strong>工作经历：</strong>参与多个网站和管理系统项目，负责前端架构、页面开发和性能优化。</p>
+          <p><strong>个人特质：</strong>关注细节，擅长将需求转化为可执行方案。</p>
+        </div>
+      </div>
+      <button class="mouse-hint mouse-light" data-target="works" aria-label="进入第三页">
+        <span></span>
+      </button>
+    </section>
+
+    <section id="works" class="panel works-panel">
+      <video class="bg-video" autoplay muted loop playsinline>
+        <source src="./3.mp4" type="video/mp4">
+      </video>
+      <div class="video-mask dark-mask"></div>
+      <div class="panel-content">
+        <p class="panel-label">WORKS</p>
+        <h2>个人作品展示</h2>
+        <div class="works-grid">
+          <article class="glass-card work-card">
+            <h3>作品一：品牌官网重构</h3>
+            <p>完成视觉升级和交互优化，提升首屏速度与移动端体验。</p>
+          </article>
+          <article class="glass-card work-card">
+            <h3>作品二：数据管理后台</h3>
+            <p>搭建模块化组件，支持数据看板、权限控制和多端适配。</p>
+          </article>
+          <article class="glass-card work-card">
+            <h3>作品三：活动专题页系统</h3>
+            <p>沉淀高复用模板，缩短上线周期并保障视觉一致性。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
